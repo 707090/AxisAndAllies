@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="model/untransformed/map"
+	xmlns="model/untransformed/map"
+	xmlns:cmn="model/untransformed/common"
+	xmlns:pct="model/untransformed/placement"
+	elementFormDefault="qualified">
+
+	<xs:import schemaLocation="Common.xsd" namespace="model/untransformed/common" />
+	
+	<xs:element name="map_type">
+		
+        <xs:complexType>
+			<xs:sequence>
+				<xs:element name="territory" type="territory_type" maxOccurs="unbounded" />
+				<xs:element name="sea_zone" type="sea_zone_type" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+        
+        <xs:key name="area_id">
+            <xs:selector xpath="territory" />
+            <xs:field xpath="id" />
+        </xs:key>
+        
+        <xs:keyref name="area_connections" refer="area_id">
+            <xs:selector xpath="territory/connection | sea_zone/connection" />
+            <xs:field xpath="." />
+        </xs:keyref>
+    </xs:element>
+        
+	<xs:complexType name="area_type">
+		<xs:sequence>
+			<xs:element name="connection" type="xs:int" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:int" />
+	</xs:complexType>
+	
+	<xs:complexType name="territory_type">
+		<xs:complexContent>
+			<xs:extension base="area_type">
+				<xs:sequence>
+					<xs:element name="name" type="xs:string" />
+					<xs:element name="value" type="xs:int" default="0" />
+					<xs:element name="default_owner" type="cmn:power_type" default="Neutral" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="sea_zone_type">
+		<xs:complexContent>
+			<xs:extension base="area_type">
+				<xs:sequence>
+					<xs:element name="zone_number" type="xs:int" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+</xs:schema>

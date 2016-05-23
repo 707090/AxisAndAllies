@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="samples" default="gen-src" basedir=".">
+	<description>Builds the default value plugin sample</description>
+
+	<property file="jaxb.properties"/>
+	
+	<taskdef name="xjc" classname="com.sun.tools.xjc.XJC2Task">
+		<classpath>
+			<fileset dir="${jaxb.lib.dir}" includes="*.jar"/>
+		</classpath>
+	</taskdef>
+
+	<target name="clean">
+		<delete dir="${project.dir}/src/model/untransformed"/>
+	</target>
+	
+	<target name="gen-src" depends="clean">
+		<mkdir dir="generated"/>
+		<xjc schema="${map.schema.loc}" destdir="generated">
+			<arg value="-extension"/>
+			<arg value="-Xdefault-value"/>
+			<arg value="-b"/>
+			<arg value="${map.bindings.loc}"/>
+		</xjc>
+		<xjc schema="${placement.schema.loc}" destdir="generated">
+			<arg value="-extension"/>
+			<arg value="-Xdefault-value"/>
+			<arg value="-b"/>
+			<arg value="${placement.bindings.loc}"/>
+		</xjc>
+		<xjc schema="${delta.schema.loc}" destdir="generated">
+			<arg value="-extension"/>
+			<arg value="-Xdefault-value"/>
+			<arg value="-b"/>
+			<arg value="${delta.bindings.loc}"/>
+		</xjc>
+		<xjc schema="${power.schema.loc}" destdir="generated">
+			<arg value="-extension"/>
+			<arg value="-Xdefault-value"/>
+			<arg value="-b"/>
+			<arg value="${power.bindings.loc}"/>
+		</xjc>
+		<move file="generated/${common.package.path}" tofile="${project.dir}/src/${common.package.path}"/>
+		<move file="generated/${map.package.path}" tofile="${project.dir}/src/${map.package.path}"/>
+		<move file="generated/${placement.package.path}" tofile="${project.dir}/src/${placement.package.path}"/>
+		<move file="generated/${delta.package.path}" tofile="${project.dir}/src/${delta.package.path}"/>
+		<move file="generated/${power.package.path}" tofile="${project.dir}/src/${power.package.path}"/>
+		<delete dir="generated"/>
+	</target>
+	
+</project>

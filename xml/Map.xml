@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="model/untransformed/map schema/Map.xsd"
+	xmlns:map="model/untransformed/map">
+	
+	<map:territory id="0">
+		<map:connection>1</map:connection>
+		<map:connection>2</map:connection>
+		<map:connection>6</map:connection>
+		<map:connection>13</map:connection>
+		<map:name>Russia</map:name>
+		<map:value>3</map:value>
+		<map:default_owner>Soviet Union</map:default_owner>
+	</map:territory>
+	<map:territory id="1">
+		<map:connection>6</map:connection>
+		<map:connection>12</map:connection>
+		<map:connection>13</map:connection>
+		<map:connection>22</map:connection>
+		<map:connection>48</map:connection>
+		<map:connection>54</map:connection>
+		<map:connection>57</map:connection>
+		<map:connection>70</map:connection>
+		<map:connection>88</map:connection>		
+		<map:name>Caucasus</map:name>
+		<map:value>2</map:value>
+		<map:default_owner>Soviet Union</map:default_owner>
+	</map:territory>
+	<map:territory id="2">
+		<map:connection>3</map:connection>
+		<map:connection>6</map:connection>
+		<map:connection>13</map:connection>
+		<map:connection>74</map:connection>
+		<map:name>Archangel</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>Soviet Union</map:default_owner>
+	</map:territory>
+	<map:territory id="3">
+		<map:connection>9</map:connection>
+		<map:connection>10</map:connection>
+		<map:connection>13</map:connection>
+		<map:connection>74</map:connection>
+		<map:connection>75</map:connection>
+		<map:name>Karelia</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>Soviet Union</map:default_owner>
+	</map:territory>
+	<map:territory id="4">
+		<map:connection>5</map:connection>
+		<map:connection>6</map:connection>
+		<map:connection>37</map:connection>
+		<map:connection>63</map:connection>
+		<map:connection>115</map:connection>
+		<map:connection>117</map:connection>
+		<map:name>Siberia</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Soviet Union</map:default_owner>
+	</map:territory>
+	<map:territory id="5">
+		<map:connection>117</map:connection>
+		<map:name>Soviet Far East</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Soviet Union</map:default_owner>
+	</map:territory>
+	<map:territory id="6">
+		<map:connection>54</map:connection>
+		<map:connection>63</map:connection>
+		<map:name>Urals</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Soviet Union</map:default_owner>
+	</map:territory>
+	<map:territory id="7">
+		<map:connection>8</map:connection>
+		<map:connection>9</map:connection>
+		<map:connection>11</map:connection>
+		<map:connection>69</map:connection>
+		<map:connection>75</map:connection>
+		<map:name>Germany</map:name>
+		<map:value>4</map:value>
+		<map:default_owner>Germany</map:default_owner>
+	</map:territory>
+	<map:territory id="8">
+		<map:connection>11</map:connection>
+		<map:connection>67</map:connection>
+		<map:connection>69</map:connection>
+		<map:connection>75</map:connection>
+		<map:connection>76</map:connection>
+		<map:connection>77</map:connection>
+		<map:connection>78</map:connection>
+		<map:name>Western Europe</map:name>
+		<map:value>3</map:value>
+		<map:default_owner>Germany</map:default_owner>
+	</map:territory>
+	<map:territory id="9">
+		<map:connection>11</map:connection>
+		<map:connection>12</map:connection>
+		<map:connection>13</map:connection>
+		<map:connection>70</map:connection>
+		<map:connection>75</map:connection>
+		<map:connection>88</map:connection>
+		<map:name>Eastern Europe</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>Germany</map:default_owner>
+	</map:territory>
+	<map:territory id="10">
+		<map:connection>68</map:connection>
+		<map:connection>73</map:connection>
+		<map:connection>75</map:connection>
+		<map:connection>76</map:connection>
+		<map:name>Norway/Finland</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>Germany</map:default_owner>
+	</map:territory>
+	<map:territory id="11">
+		<map:connection>69</map:connection>
+		<map:connection>70</map:connection>
+		<map:connection>86</map:connection>
+		<map:connection>87</map:connection>
+		<map:name>Southern Europe</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>Germany</map:default_owner>
+	</map:territory>
+	<map:territory id="12">
+		<map:connection>13</map:connection>
+		<map:connection>88</map:connection>
+		<map:name>Ukraine</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>Germany</map:default_owner>
+	</map:territory>
+	<map:territory id="13">
+		<map:name>West Russia</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>Germany</map:default_owner>
+	</map:territory>
+	<map:territory id="14">
+		<map:connection>17</map:connection>
+		<map:connection>65</map:connection>
+		<map:connection>84</map:connection>
+		<map:connection>85</map:connection>
+		<map:connection>86</map:connection>
+		<map:name>North Africa</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Germany</map:default_owner>
+	</map:territory>
+	<map:territory id="15">
+		<map:connection>61</map:connection>
+		<map:connection>76</map:connection>
+		<map:connection>77</map:connection>
+		<map:connection>78</map:connection>
+		<map:name>United Kingdom</map:name>
+		<map:value>3</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="16">
+		<map:connection>100</map:connection>
+		<map:name>East Indies</map:name>
+		<map:value>2</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="17">
+		<map:connection>22</map:connection>
+		<map:connection>24</map:connection>
+		<map:connection>25</map:connection>
+		<map:connection>30</map:connection>
+		<map:connection>65</map:connection>
+		<map:connection>87</map:connection>
+		<map:connection>98</map:connection>
+		<map:name>Anglo-Egypt Sudan</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="18">
+		<map:connection>103</map:connection>
+		<map:name>Australia</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="19">
+		<map:connection>102</map:connection>
+		<map:name>Borneo</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="20">
+		<map:connection>34</map:connection>
+		<map:connection>42</map:connection>
+		<map:connection>71</map:connection>
+		<map:connection>80</map:connection>
+		<map:name>Eastern Canada</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="21">
+		<map:connection>22</map:connection>
+		<map:connection>38</map:connection>
+		<map:connection>57</map:connection>
+		<map:connection>62</map:connection>
+		<map:connection>99</map:connection>
+		<map:name>India</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="22">
+		<map:connection>57</map:connection>
+		<map:connection>66</map:connection>
+		<map:connection>70</map:connection>
+		<map:connection>87</map:connection>
+		<map:connection>88</map:connection>
+		<map:connection>98</map:connection>
+		<map:name>Middle East</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="23">
+		<map:connection>24</map:connection>
+		<map:connection>58</map:connection>
+		<map:connection>64</map:connection>
+		<map:connection>96</map:connection>
+		<map:connection>97</map:connection>
+		<map:name>Union of South Africa</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="24">
+		<map:connection>25</map:connection>
+		<map:connection>30</map:connection>
+		<map:connection>58</map:connection>
+		<map:connection>64</map:connection>
+		<map:connection>95</map:connection>
+		<map:connection>97</map:connection>
+		<map:name>Belgian Congo/Kenya</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="25">
+		<map:connection>27</map:connection>
+		<map:connection>65</map:connection>
+		<map:connection>95</map:connection>
+		<map:name>French Equitorial Africa</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="26">
+		<map:connection>97</map:connection>
+		<map:name>French Madagascar</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="27">
+		<map:connection>65</map:connection>
+		<map:connection>93</map:connection>
+		<map:name>French West Africa</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="28">
+		<map:connection>67</map:connection>
+		<map:connection>84</map:connection>
+		<map:connection>85</map:connection>
+		<map:name>Gibralter</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="29">
+		<map:connection>73</map:connection>
+		<map:name>Iceland</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="30">
+		<map:connection>98</map:connection>
+		<map:name>Italian East Africa</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="31">
+		<map:connection>107</map:connection>
+		<map:name>New Guinea</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="32">
+		<map:connection>104</map:connection>
+		<map:name>New Zealand</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="33">
+		<map:connection>107</map:connection>
+		<map:name>Solomon Islands</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="34">
+		<map:connection>43</map:connection>
+		<map:connection>44</map:connection>
+		<map:connection>119</map:connection>
+		<map:name>Western Canada</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United Kingdom</map:default_owner>
+	</map:territory>
+	<map:territory id="35">
+		<map:connection>115</map:connection>
+		<map:name>Japan</map:name>
+		<map:value>4</map:value>
+		<map:default_owner>Japan</map:default_owner>
+	</map:territory>
+	<map:territory id="36">
+		<map:connection>37</map:connection>
+		<map:connection>48</map:connection>
+		<map:connection>54</map:connection>
+		<map:connection>116</map:connection>
+		<map:name>Coastal China</map:name>
+		<map:value>2</map:value>
+		<map:default_owner>Japan</map:default_owner>
+	</map:territory>
+	<map:territory id="37">
+		<map:connection>54</map:connection>
+		<map:connection>63</map:connection>
+		<map:connection>115</map:connection>
+		<map:name>Manchuria</map:name>
+		<map:value>2</map:value>
+		<map:default_owner>Japan</map:default_owner>
+	</map:territory>
+	<map:territory id="38">
+		<map:connection>48</map:connection>
+		<map:connection>62</map:connection>
+		<map:connection>101</map:connection>
+		<map:name>Southeast Asia</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>Japan</map:default_owner>
+	</map:territory>
+	<map:territory id="39">
+		<map:connection>108</map:connection>
+		<map:name>Caroline Islands</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Japan</map:default_owner>
+	</map:territory>
+	<map:territory id="40">
+		<map:connection>115</map:connection>
+		<map:name>Iwo Jima</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Japan</map:default_owner>
+	</map:territory>
+	<map:territory id="41">
+		<map:connection>115</map:connection>
+		<map:name>Okinawa</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Japan</map:default_owner>
+	</map:territory>
+	<map:territory id="42">
+		<map:connection>43</map:connection>
+		<map:connection>50</map:connection>
+		<map:connection>81</map:connection>
+		<map:name>Eastern United States</map:name>
+		<map:value>6</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="43">
+		<map:connection>52</map:connection>
+		<map:connection>112</map:connection>
+		<map:name>Western United States</map:name>
+		<map:value>6</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="44">
+		<map:connection>118</map:connection>
+		<map:connection>119</map:connection>
+		<map:name>Alaska</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="45">
+		<map:connection>59</map:connection>
+		<map:connection>60</map:connection>
+		<map:connection>92</map:connection>
+		<map:name>Brazil</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="46">
+		<map:connection>110</map:connection>
+		<map:name>Hawaiian Islands</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="47">
+		<map:connection>108</map:connection>
+		<map:name>Philippine Islands</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="48">
+		<map:connection>54</map:connection>
+		<map:connection>57</map:connection>
+		<map:connection>62</map:connection>
+		<map:connection>116</map:connection>
+		<map:name>Szechwan</map:name>
+		<map:value>1</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="49">
+		<map:connection>50</map:connection>
+		<map:connection>60</map:connection>
+		<map:connection>82</map:connection>
+		<map:connection>89</map:connection>
+		<map:name>Central America</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="50">
+		<map:connection>52</map:connection>
+		<map:connection>82</map:connection>
+		<map:connection>89</map:connection>
+		<map:name>East Mexico</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="51">
+		<map:connection>72</map:connection>
+		<map:name>Greenland</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="52">
+		<map:connection>111</map:connection>
+		<map:name>Mexico</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="53">
+		<map:connection>113</map:connection>
+		<map:name>Midway</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="54">
+		<map:connection>63</map:connection>
+		<map:name>Northwestern China</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="55">
+		<map:connection>109</map:connection>
+		<map:name>Wake Island</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="56">
+		<map:connection>82</map:connection>
+		<map:name>West Indies</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>United States</map:default_owner>
+	</map:territory>
+	<map:territory id="57">
+		<map:connection>62</map:connection>
+		<map:name>Afghanistan</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="58">
+		<map:connection>95</map:connection>
+		<map:name>Angola</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="59">
+		<map:connection>60</map:connection>
+		<map:connection>90</map:connection>
+		<map:connection>91</map:connection>
+		<map:name>Chile/Argentina</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="60">
+		<map:connection>82</map:connection>
+		<map:connection>89</map:connection>
+		<map:name>Colombia/Venesuela</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="61">
+		<map:connection>76</map:connection>
+		<map:connection>78</map:connection>
+		<map:connection>79</map:connection>
+		<map:name>Eire</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="62">
+		<map:name>Himalaya</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="63">
+		<map:name>Mongolia</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="64">
+		<map:connection>97</map:connection>
+		<map:name>Mozambique</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="65">
+		<map:connection>93</map:connection>
+		<map:name>Sahara</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="66">
+		<map:connection>98</map:connection>
+		<map:name>Saudi Arabia</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="67">
+		<map:connection>84</map:connection>
+		<map:connection>85</map:connection>
+		<map:name>Spain/Portugal</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="68">
+		<map:connection>75</map:connection>
+		<map:name>Sweden</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="69">
+		<map:name>Switzerland</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:territory id="70">
+		<map:connection>87</map:connection>
+		<map:connection>88</map:connection>
+		<map:name>Turkey</map:name>
+		<map:value>0</map:value>
+		<map:default_owner>Neutral</map:default_owner>
+	</map:territory>
+	<map:sea_zone id="71">
+		<map:connection>72</map:connection>
+		<map:connection>80</map:connection>
+		<map:zone_number>1</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="72">
+		<map:connection>73</map:connection>
+		<map:connection>76</map:connection>
+		<map:connection>79</map:connection>
+		<map:connection>80</map:connection>
+		<map:zone_number>2</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="73">
+		<map:connection>74</map:connection>
+		<map:connection>76</map:connection>
+		<map:zone_number>3</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="74">
+		<map:zone_number>4</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="75">
+		<map:connection>76</map:connection>
+		<map:zone_number>5</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="76">
+		<map:connection>77</map:connection>
+		<map:connection>78</map:connection> <!-- Debatable-->
+		<map:connection>79</map:connection>
+		<map:zone_number>6</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="77">
+		<map:connection>78</map:connection>
+		<map:zone_number>7</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="78">
+		<map:connection>79</map:connection>
+		<map:connection>84</map:connection>
+		<map:zone_number>8</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="79">
+		<map:connection>80</map:connection>
+		<map:connection>83</map:connection>
+		<map:connection>84</map:connection>
+		<map:zone_number>9</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="80">
+		<map:connection>81</map:connection>
+		<map:connection>83</map:connection>
+		<map:zone_number>10</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="81">
+		<map:connection>82</map:connection>
+		<map:connection>83</map:connection>
+		<map:zone_number>11</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="82">
+		<map:connection>83</map:connection>
+		<map:connection>89</map:connection> <!-- Depends on Panama control -->
+		<map:connection>92</map:connection>
+		<map:zone_number>12</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="83">
+		<map:connection>84</map:connection>
+		<map:connection>92</map:connection>
+		<map:connection>93</map:connection>
+		<map:zone_number>13</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="84">
+		<map:connection>85</map:connection>
+		<map:connection>93</map:connection>
+		<map:zone_number>14</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="85">
+		<map:connection>86</map:connection>
+		<map:zone_number>15</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="86">
+		<map:connection>87</map:connection>
+		<map:zone_number>16</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="87">
+		<map:connection>88</map:connection> <!-- Depends on Turkey ruling -->
+		<map:connection>98</map:connection> <!-- Depends on Suez control  -->
+		<map:zone_number>17</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="88">
+		<map:zone_number>18</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="89">
+		<map:connection>90</map:connection>
+		<map:connection>111</map:connection>
+		<map:zone_number>19</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="90">
+		<map:connection>91</map:connection>
+		<map:connection>106</map:connection>
+		<map:zone_number>20</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="91">
+		<map:connection>92</map:connection>
+		<map:connection>94</map:connection>
+		<map:connection>105</map:connection>
+		<map:zone_number>21</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="92">
+		<map:connection>93</map:connection>
+		<map:connection>94</map:connection>
+		<map:zone_number>22</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="93">
+		<map:connection>94</map:connection>
+		<map:connection>95</map:connection>
+		<map:zone_number>23</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="94">
+		<map:connection>95</map:connection>
+		<map:connection>96</map:connection>
+		<map:zone_number>24</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="95">
+		<map:connection>96</map:connection>
+		<map:zone_number>25</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="96">
+		<map:connection>97</map:connection>
+		<map:zone_number>26</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="97">
+		<map:connection>98</map:connection>
+		<map:connection>100</map:connection>
+		<map:zone_number>27</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="98">
+		<map:connection>99</map:connection>
+		<map:connection>100</map:connection>
+		<map:zone_number>28</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="99">
+		<map:connection>100</map:connection>
+		<map:connection>101</map:connection>
+		<map:zone_number>29</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="100">
+		<map:connection>101</map:connection>
+		<map:connection>102</map:connection>
+		<map:connection>103</map:connection>
+		<map:zone_number>30</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="101">
+		<map:connection>102</map:connection>
+		<map:connection>108</map:connection>
+		<map:connection>116</map:connection>
+		<map:zone_number>31</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="102">
+		<map:connection>103</map:connection>
+		<map:connection>107</map:connection>
+		<map:connection>108</map:connection>
+		<map:zone_number>32</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="103">
+		<map:connection>104</map:connection>
+		<map:connection>107</map:connection>
+		<map:zone_number>33</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="104">
+		<map:connection>105</map:connection>
+		<map:connection>107</map:connection>
+		<map:zone_number>34</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="105">
+		<map:connection>106</map:connection>
+		<map:connection>107</map:connection>
+		<map:zone_number>35</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="106">
+		<map:connection>107</map:connection>
+		<map:connection>110</map:connection>
+		<map:connection>111</map:connection>
+		<map:zone_number>36</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="107">
+		<map:connection>108</map:connection>
+		<map:connection>109</map:connection>
+		<map:connection>110</map:connection>
+		<map:zone_number>37</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="108">
+		<map:connection>109</map:connection>
+		<map:connection>115</map:connection>
+		<map:connection>116</map:connection>
+		<map:zone_number>38</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="109">
+		<map:connection>110</map:connection>
+		<map:connection>114</map:connection>
+		<map:connection>115</map:connection>
+		<map:zone_number>39</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="110">
+		<map:connection>111</map:connection>
+		<map:connection>112</map:connection>
+		<map:connection>113</map:connection>
+		<map:connection>114</map:connection>
+		<map:zone_number>40</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="111">
+		<map:connection>112</map:connection>
+		<map:zone_number>41</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="112">
+		<map:connection>113</map:connection>
+		<map:connection>119</map:connection>
+		<map:zone_number>42</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="113">
+		<map:connection>114</map:connection>
+		<map:connection>118</map:connection>
+		<map:connection>119</map:connection>
+		<map:zone_number>43</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="114">
+		<map:connection>115</map:connection>
+		<map:connection>117</map:connection>
+		<map:connection>118</map:connection>
+		<map:zone_number>44</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="115">
+		<map:connection>116</map:connection>
+		<map:connection>117</map:connection>
+		<map:zone_number>45</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="116">
+		<map:zone_number>46</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="117">
+		<map:connection>118</map:connection>
+		<map:zone_number>47</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="118">
+		<map:connection>119</map:connection>
+		<map:zone_number>48</map:zone_number>
+	</map:sea_zone>
+	<map:sea_zone id="119">
+		<map:zone_number>49</map:zone_number>
+	</map:sea_zone>
+</map:map>

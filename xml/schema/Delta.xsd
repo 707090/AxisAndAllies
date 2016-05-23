@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="model/untransformed/delta"
+	xmlns="model/untransformed/delta"
+	xmlns:cmn="model/untransformed/common"
+	xmlns:pct="model/untransformed/placement"
+	elementFormDefault="qualified"
+	>
+	
+	<xs:import schemaLocation="Common.xsd" namespace="model/untransformed/common"/>
+	<xs:import schemaLocation="Placement.xsd" namespace="model/untransformed/placement"/>
+	
+	<xs:element name="delta_type">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="purchase_units">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="phase" type="cmn:turn_phase_type" fixed="Purchase Units"/>
+							<xs:element name="purchase" type="pct:military_installment_type">
+								<xs:unique name="unique_troop_types">
+									<xs:selector xpath="troops" />
+									<xs:field xpath="@type" />
+								</xs:unique>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="combat_move">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="phase" type="cmn:turn_phase_type" fixed="Combat Move"/>
+							<xs:element name="movement" type="military_installment_movement_type" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="noncombat_move">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="phase" type="cmn:turn_phase_type" fixed="Noncombat Move"/>
+							<xs:element name="movement" type="military_installment_movement_type" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="mobilize_new_units">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="phase" type="cmn:turn_phase_type" fixed="Mobilize New Units"/>
+							<xs:element name="mobilization" type="unit_mobilization_type" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="unit_purchase_type">
+		<xs:sequence>
+			<xs:element name="unit_type" type="cmn:military_unit_type"/>
+			<xs:element name="number" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="military_installment_movement_type">
+		<xs:sequence>
+			<xs:element name="military_installment" type="pct:military_installment_type"/>
+			<xs:element name="area_from" type="xs:int"/>
+			<xs:element name="area_to" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="unit_mobilization_type">
+		<xs:sequence>
+			<xs:element name="unit_type" type="cmn:military_unit_type"/>
+			<xs:element name="number" type="xs:int"/>
+			<xs:element name="mobilization_area" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

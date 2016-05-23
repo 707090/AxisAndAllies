@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="model/untransformed/power"
+	xmlns="model/untransformed/power"
+	xmlns:cmn="model/untransformed/common"
+	xmlns:map="model/untransformed/map"
+	elementFormDefault="qualified"
+	>
+	
+	<xs:import schemaLocation="Common.xsd" namespace="model/untransformed/common"/>
+	<xs:import schemaLocation="Map.xsd" namespace="model/untransformed/map"/>
+	
+	<xs:element name="powers_type">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="power_holdings" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="power" type="cmn:power_type"/>
+							<xs:element name="money" type="xs:int"/>
+							<xs:element name="controlled_area" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		
+		<xs:unique name="unique_powers">
+			<xs:selector xpath="power_holdings"/>
+			<xs:field xpath="power"/>
+		</xs:unique>
+		
+	</xs:element>
+	
+</xs:schema>

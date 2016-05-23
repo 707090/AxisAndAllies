@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="model/untransformed/placement"
+	xmlns="model/untransformed/placement"
+	xmlns:cmn="model/untransformed/common"
+	elementFormDefault="qualified">
+	
+	<xs:import schemaLocation="Common.xsd" namespace="model/untransformed/common" />
+	
+	<xs:element name="placement_type">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="military_presence" type="military_presence_type" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="military_presence_type">
+		<xs:sequence>
+			<xs:element name="area_ref" type="xs:int"/>
+			<xs:element name="military_installment" type="military_installment_type" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="military_installment_type">
+		<xs:sequence>
+			<xs:element name="owner" type="cmn:power_type" />
+			<xs:element name="troop_group" type="troop_group_type" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="troop_group_type">
+		<xs:sequence>
+			<xs:element name="size" type="xs:int"/>
+		</xs:sequence>
+		<xs:attribute name="type" type="cmn:military_unit_type" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="transport_cargo_type">
+		<xs:complexContent>
+			<xs:extension base="troop_group_type">
+				<xs:sequence>
+					<xs:element name="cargo" type="military_installment_type" minOccurs="0" maxOccurs="2"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+</xs:schema>

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pct:placement
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="model/untransformed/placement schema/Placement.xsd" 
+	xmlns:pct="model/untransformed/placement"
+	xmlns:map="model/untransformed/map" 
+	xmlns:cmn="model/untransformed/common">
+	
+	<pct:military_presence>
+		<pct:area_ref>0</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Soviet Union</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>6</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Tank">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Fighter">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>1</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Soviet Union</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>3</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Tank">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>2</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Soviet Union</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>3</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>3</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Soviet Union</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>3</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>4</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Soviet Union</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>3</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>7</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Germany</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>3</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Fighter">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Bomber">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>8</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Germany</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Tank">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Fighter">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>9</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Germany</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>4</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Tank">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>10</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Germany</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>11</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Germany</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Fighter">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>12</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Germany</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Tank">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>13</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Germany</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>3</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>14</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Germany</pct:owner>
+			<pct:troop_group type="Tank">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>15</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United Kingdom</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Fighter">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Bomber">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>17</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United Kingdom</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Tank">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>18</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United Kingdom</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>19</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United Kingdom</pct:owner>
+			<pct:troop_group type="Tank">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>20</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United Kingdom</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Fighter">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>21</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United Kingdom</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>22</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Japan</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>4</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Tank">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Fighter">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Bomber">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>23</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Japan</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>24</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Japan</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>25</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Japan</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>26</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United States</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Tank">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Fighter">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Bomber">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>27</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United States</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Tank">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>28</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United States</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>29</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United States</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>30</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United States</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>31</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United States</pct:owner>
+			<pct:troop_group type="Infantry">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>32</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Soviet Union</pct:owner>
+			<pct:troop_group type="Submarine">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>33</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Germany</pct:owner>
+			<pct:troop_group type="Submarine">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Battleship">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>34</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United Kingdom</pct:owner>
+			<pct:troop_group type="Submarine">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Battleship">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>35</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Germany</pct:owner>
+			<pct:troop_group type="Submarine">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>36</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United Kingdom</pct:owner>
+			<pct:troop_group type="Transport">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Destroyer">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>37</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United States</pct:owner>
+			<pct:troop_group type="Transport">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Destroyer">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>38</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United Kingdom</pct:owner>
+			<pct:troop_group type="Aircraft Carrier">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Fighter">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>39</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Germany</pct:owner>
+			<pct:troop_group type="Submarine">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Transport">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Destroyer">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>40</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United Kingdom</pct:owner>
+			<pct:troop_group type="Transport">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Destroyer">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>41</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Japan</pct:owner>
+			<pct:troop_group type="Submarine">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Destroyer">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>42</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United Kingdom</pct:owner>
+			<pct:troop_group type="Submarine">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Transport">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>43</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United States</pct:owner>
+			<pct:troop_group type="Battleship">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>44</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>United States</pct:owner>
+			<pct:troop_group type="Submarine">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Transport">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Aircraft Carrier">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Fighter">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>45</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Japan</pct:owner>
+			<pct:troop_group type="Transport">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Battleship">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Aircraft Carrier">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Fighter">
+				<pct:size>2</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+	<pct:military_presence>
+		<pct:area_ref>46</pct:area_ref>
+		<pct:military_installment>
+			<pct:owner>Japan</pct:owner>
+			<pct:troop_group type="Transport">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Destroyer">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Aircraft Carrier">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+			<pct:troop_group type="Fighter">
+				<pct:size>1</pct:size>
+			</pct:troop_group>
+		</pct:military_installment>
+	</pct:military_presence>
+</pct:placement>

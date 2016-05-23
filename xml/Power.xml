@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pow:powers
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="model/untransformed/power schema/Power.xsd"
+	xmlns:pow="model/untransformed/power"
+	xmlns:cmn="model/untransformed/common">
+
+	<pow:power_holdings>
+		<pow:power>Soviet Union</pow:power>
+		<pow:money>7</pow:money>
+		<pow:controlled_area>0</pow:controlled_area>
+	</pow:power_holdings>
+
+</pow:powers>

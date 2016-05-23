@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/Users/develop/Desktop/Java/Java Projects/XMLMap/MapCreator/lib/guava/guava-19.0.jar" sourcepath="lib/guava/guava-19.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/Users/develop/Desktop/Java/Java%20Projects/XMLMap/MapCreator/lib/guava/guava-19.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jaxb/jaxb-core-2.2.11.jar" sourcepath="lib/jaxb/jaxb-ri-20070125"/>
+	<classpathentry kind="lib" path="lib/jaxb/jaxb-impl-2.2.11.jar" sourcepath="lib/jaxb/jaxb-ri-20070125"/>
+	<classpathentry kind="lib" path="lib/jaxb/jaxb-xjc-2.2.11.jar" sourcepath="lib/jaxb/jaxb-ri-20070125"/>
+	<classpathentry kind="lib" path="lib/jaxb/jaxb2-default-value-1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

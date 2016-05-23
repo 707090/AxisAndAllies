@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings 
+	version="2.1"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:jxb="http://java.sun.com/xml/ns/jaxb">
+	
+	<jxb:globalBindings choiceContentProperty="true"/>
+	
+	<jxb:bindings schemaLocation="Placement.xsd" node="/xsd:schema">
+		<jxb:schemaBindings>
+			<jxb:package name="model.untransformed.placement"/>
+		</jxb:schemaBindings>
+	</jxb:bindings>
+	
+	<jxb:bindings schemaLocation="Common.xsd" node="/xsd:schema">
+		<jxb:schemaBindings>
+			<jxb:package name="model.untransformed.common"/>
+		</jxb:schemaBindings>
+	</jxb:bindings>
+	
+</jxb:bindings>

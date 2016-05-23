@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="model/untransformed/common"
+	xmlns="model/untransformed/common"
+	elementFormDefault="qualified">
+	
+	<xs:simpleType name="power_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Soviet Union"/>
+			<xs:enumeration value="Germany"/>
+			<xs:enumeration value="United Kingdom"/>
+			<xs:enumeration value="Japan"/>
+			<xs:enumeration value="United States"/>
+			<xs:enumeration value="Neutral"/>			
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="military_air_unit_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Fighter"/>
+			<xs:enumeration value="Bomber"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="military_land_unit_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Infantry"/>
+			<xs:enumeration value="Tank"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="military_sea_unit_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Submarine"/>
+			<xs:enumeration value="Transport"/>
+			<xs:enumeration value="Destroyer"/>
+			<xs:enumeration value="Aircraft Carrier"/>
+			<xs:enumeration value="Battleship"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="military_unit_type">
+		<xs:union memberTypes="military_land_unit_type military_air_unit_type military_sea_unit_type"/>
+	</xs:simpleType>
+	
+	<xs:simpleType name="turn_phase_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Purchase Units"/>
+			<xs:enumeration value="Combat Move"/>
+			<xs:enumeration value="Conduct Combat"/>
+			<xs:enumeration value="Noncombat Move"/>
+			<xs:enumeration value="Mobilize New Units"/>
+			<xs:enumeration value="Collect Income"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>
