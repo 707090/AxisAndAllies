@@ -7,6 +7,7 @@ import com.google.common.collect.Multimap;
 
 import model.map.Area;
 import model.map.Map;
+import model.map.Map.MapBuilder;
 import model.map.SeaZone;
 import model.map.Territory;
 import model.untransformed.map.AreaType;
@@ -19,7 +20,7 @@ public class MapMapper implements Mapper<MapType, Map> {
 	java.util.Map<Integer, Area> areaById;
 	
 	public Map mapType(MapType base) {
-		Map map = new Map();
+		MapBuilder map = new MapBuilder();
 		areaById = new HashMap<Integer, Area>(base.getTerritory().size());
 		
 		//Create new territories/sea zones and map every area according by its ID
@@ -54,14 +55,8 @@ public class MapMapper implements Mapper<MapType, Map> {
 		});
 		
 		//Add all the new Territories and SeaZones to the map
-		areaById.values().forEach(area -> {
-			if(area instanceof Territory) {
-				map.getTerritories().add((Territory) area);
-			} else if(area instanceof SeaZone) {
-				map.getSeaZones().add((SeaZone) area);
-			}
-		});
-		return map;
+		map.with(areaById.values());
+		return map.build();
 	}
 	
 	java.util.Map<Area, AreaType> unwrappedByAreas;
