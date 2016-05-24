@@ -1,15 +1,17 @@
 package model.transform;
 
 import java.util.HashMap;
+import java.util.function.Supplier;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 
 import model.map.Area;
+import model.map.Area.AreaBuilder;
 import model.map.Map;
 import model.map.Map.MapBuilder;
-import model.map.SeaZone;
-import model.map.Territory;
+import model.map.SeaZone.SeaZoneBuilder;
+import model.map.Territory.TerritoryBuilder;
 import model.untransformed.map.AreaType;
 import model.untransformed.map.MapType;
 import model.untransformed.map.SeaZoneType;
@@ -21,38 +23,56 @@ public class MapMapper implements Mapper<MapType, Map> {
 	
 	public Map mapType(MapType base) {
 		MapBuilder map = new MapBuilder();
-		areaById = new HashMap<Integer, Area>(base.getTerritory().size());
+		areaById = new HashMap<Integer, Area>(base.getTerritory().size() + base.getSeaZone().size());
+		
+		java.util.Map<Integer, AreaBuilder<?>> builders = new HashMap<Integer, AreaBuilder<?>>(base.getTerritory().size() + base.getSeaZone().size());
 		
 		//Create new territories/sea zones and map every area according by its ID
 		base.getTerritory().forEach(unwrappedTerritory -> {
-			areaById.put(unwrappedTerritory.getId(), new Territory(unwrappedTerritory));
+			builders.put(unwrappedTerritory.getId(), new TerritoryBuilder()
+															.withName(unwrappedTerritory.getName())
+															.withValue(unwrappedTerritory.getValue())
+															.withDefaultOwner(unwrappedTerritory.getDefaultOwner()));
 		});
 		base.getSeaZone().forEach(unwrappedSeaZone -> {
-			areaById.put(unwrappedSeaZone.getId(), new SeaZone(unwrappedSeaZone));
+			builders.put(unwrappedSeaZone.getId(), new SeaZoneBuilder()
+															.withZoneNumber(unwrappedSeaZone.getZoneNumber()));
 		});
 
 		//Resolve the IDs for all the areas
 		base.getTerritory().forEach(unwrappedTerritory -> {
-			Territory needingReferencesResolved = (Territory) areaById.get(unwrappedTerritory.getId());
+			AreaBuilder<?> needingReferencesResolved = (AreaBuilder<?>) builders.get(unwrappedTerritory.getId());
 			unwrappedTerritory.getConnection().forEach(areaId -> {
-				needingReferencesResolved.getConnections().add(areaById.get(areaId));
+				needingReferencesResolved.with(builders.get(areaId));
 			});
 		});
 		base.getSeaZone().forEach(unwrappedSeaZone -> {
-			SeaZone needingReferencesResolved = (SeaZone) areaById.get(unwrappedSeaZone.getId());
+			AreaBuilder<?> needingReferencesResolved = (AreaBuilder<?>) builders.get(unwrappedSeaZone.getId());
 			unwrappedSeaZone.getConnection().forEach(areaId -> {
-				needingReferencesResolved.getConnections().add(areaById.get(areaId));
+				needingReferencesResolved.with(builders.get(areaId));
 			});
 		});
 		
 		//Denormalize connections for easy references
-		areaById.values().forEach(area -> {
-			for(Area connection: area.getConnections()) {
-				if(!connection.getConnections().contains(area)) {
-					connection.getConnections().add(area);
+		builders.values().forEach(builder -> {
+			for(Supplier<Area> connection: builder.getConnections()) {
+				if (connection instanceof AreaBuilder<?>) {
+					if(!((AreaBuilder<?>) connection).getConnections().contains(builder)) {
+						((AreaBuilder<?>) connection).with(builder);
+					}
 				}
+				
 			}
 		});
+		
+		builders.values().forEach(builder -> {
+			builder.build();
+		});
+		
+		builders.forEach((id, builder) -> {
+			builder.resolveConnections();
+			areaById.put(id, builder.get());
+		});;
 		
 		//Add all the new Territories and SeaZones to the map
 		map.with(areaById.values());

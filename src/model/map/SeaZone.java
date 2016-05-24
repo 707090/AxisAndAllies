@@ -1,22 +1,36 @@
 package model.map;
 
-import model.untransformed.map.SeaZoneType;
+public final class SeaZone extends Area {
 
-public class SeaZone extends Area {
+	public static final class SeaZoneBuilder extends AreaBuilder<SeaZone> {
+		
+		private int zoneNumber;
+		
+		public SeaZoneBuilder() {
+			zoneNumber = -1;
+		}
+		
+		public SeaZoneBuilder withZoneNumber(int zoneNumber) {
+			this.zoneNumber = zoneNumber;
+			return this;
+		}
 
-	private int zoneNumber;
+		@Override
+		public SeaZone _build() {
+			return new SeaZone(this);
+		}
+		
+	}
 	
-	public SeaZone(SeaZoneType base) {
-		super(base);
-		this.zoneNumber = base.getZoneNumber();
+	private final int zoneNumber;
+	
+	public SeaZone(SeaZoneBuilder builder) {
+		super(builder);
+		this.zoneNumber = builder.zoneNumber;
 	}
 
 	public int getZoneNumber() {
 		return zoneNumber;
-	}
-
-	public void setZoneNumber(int zoneNumber) {
-		this.zoneNumber = zoneNumber;
 	}
 	
 	@Override
