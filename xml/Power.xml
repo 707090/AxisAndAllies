@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pow:powers
+<pow:powers_type
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="model/untransformed/power schema/Power.xsd"
 	xmlns:pow="model/untransformed/power"
@@ -11,4 +11,4 @@
 		<pow:controlled_area>0</pow:controlled_area>
 	</pow:power_holdings>
 
-</pow:powers>
+</pow:powers_type>
